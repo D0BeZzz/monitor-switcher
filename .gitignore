@@ -1,0 +1,19 @@
+# 编译产物
+*.exe
+*.pdb
+*.obj
+_build/
+
+# 第三方工具：7.6MB，不入库，按 README 自行下载到本目录
+winddcutil.exe
+
+# 运行时生成的诊断文件
+crash.log
+audio-diag.txt
+
+# --shot 调试输出
+/*.png
+
+# 杂项
+NVIDIA Corporation/
+Thumbs.db
