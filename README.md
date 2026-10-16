@@ -49,9 +49,11 @@ build.bat
 
 ## 依赖：winddcutil.exe
 
-DDC/CI 部分调用 [scottaxcell/winddcutil](https://github.com/scottaxcell/winddcutil)。**这个 7.6 MB 的二进制没有入库**，需要手动下载后放到 `Control Center.exe` 同目录（程序按 `Application.StartupPath` 找它）。
+DDC/CI 部分调用 [scottaxcell/winddcutil](https://github.com/scottaxcell/winddcutil)。这个 7.6 MB 的二进制**已经随仓库一起分发**（MIT 许可，许可证全文与来源、校验值见 `third-party/winddcutil-LICENSE.txt`），clone 下来就能直接用，不用另外下载。
 
-没放也不影响使用：投影、音频、电源功能照常，信号源区块会降级为不可用，底部状态行提示「未找到 winddcutil.exe，信号源切换不可用」。
+程序按 `Application.StartupPath` 找它，所以它必须和 `Control Center.exe` 在同一目录。
+
+万一它缺失，其余功能照常：投影、音频、电源不受影响，只有信号源区块降级为不可用，底部状态行提示「未找到 winddcutil.exe，信号源切换不可用」。
 
 ## 信号源代码值
 

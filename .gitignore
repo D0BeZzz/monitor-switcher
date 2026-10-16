@@ -4,8 +4,8 @@
 *.obj
 _build/
 
-# 第三方工具：7.6MB，不入库，按 README 自行下载到本目录
-winddcutil.exe
+# 第三方工具：MIT 许可，随仓库分发（见 third-party/winddcutil-LICENSE.txt）
+!winddcutil.exe
 
 # 运行时生成的诊断文件
 crash.log
